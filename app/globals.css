@@ -1116,17 +1116,19 @@ body {
 }
 
 .hero h1 {
-  line-height: 0.79;
+  line-height: 0.86;
   transform: rotate(-1.2deg);
 }
 
 .hero h1 span {
-  display: inline;
-  padding: 0 0.1em 0.04em;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 0.1em;
+  padding: 0.08em 0.1em 0.12em;
   background: var(--signal);
   color: var(--ink);
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+  line-height: 0.94;
   text-shadow: none;
 }
 
@@ -1522,6 +1524,12 @@ footer {
   .hero h1 {
     max-width: 9ch;
     font-size: clamp(3.8rem, 17vw, 6.5rem);
+    line-height: 0.9;
+  }
+
+  .hero h1 span {
+    margin-top: 0.14em;
+    line-height: 0.98;
   }
 
   .hero-bottom {
