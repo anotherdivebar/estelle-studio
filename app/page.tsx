@@ -180,6 +180,7 @@ export default function Home() {
               alt="A dark SJC drum kit surrounded by microphones in J. Peavey’s olive-green recording room"
               fill
               priority
+              unoptimized
               sizes="(max-width: 760px) 92vw, 53vw"
             />
             <figcaption>
@@ -241,6 +242,7 @@ export default function Home() {
               src="/studio-kit.webp"
               alt="View from behind the drum kit with cymbals, microphones, and studio rack gear"
               fill
+              unoptimized
               sizes="(max-width: 760px) 92vw, 58vw"
             />
             <figcaption>Behind the kit / SJC maple</figcaption>
@@ -250,6 +252,7 @@ export default function Home() {
               src="/studio-overhead.webp"
               alt="Overhead view of a fully miked drum kit inside the studio"
               fill
+              unoptimized
               sizes="(max-width: 760px) 48vw, 27vw"
             />
             <figcaption>Room perspective / 02</figcaption>
@@ -350,7 +353,13 @@ export default function Home() {
 
       <section className="booking" id="booking">
         <div className="booking-bg" aria-hidden="true">
-          <Image src="/studio-wide.webp" alt="" fill sizes="100vw" />
+          <Image
+            src="/studio-wide.webp"
+            alt=""
+            fill
+            unoptimized
+            sizes="100vw"
+          />
         </div>
         <div className="booking-content section-wrap">
           <p className="section-kicker">Available for the right project</p>
